@@ -9,7 +9,7 @@ const lastUpdated = document.getElementById("last-updated");
 
 async function getData(cityName) {
   const promise = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=b97f6de3807243aaa4832937252903&q=${cityName}&aqi=yes`
+    `https://api.weatherapi.com/v1/current.json?key=b97f6de3807243aaa4832937252903&q=${cityName}&aqi=yes`
   );
 
   return await promise.json();
